@@ -6,6 +6,9 @@ git stash
 # Verify correct branch
 git checkout develop
 
+git add -A
+git commit -m "Source"
+
 # Build new files
 stack exec atkv clean
 stack exec atkv build
@@ -15,7 +18,7 @@ git fetch --all
 git checkout -b master --track origin/master
 
 # Overwrite existing files with new files
-cp -a _site/. .
+yes | cp -a _site/. .
 
 # Commit
 git add -A
