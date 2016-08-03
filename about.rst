@@ -1,17 +1,10 @@
 ---
-title: About
+title: Sobre
 ---
-Nullam imperdiet sodales orci vitae molestie. Nunc quam orci, pharetra a
-rhoncus vitae, eleifend id felis. Suspendisse potenti. Etiam vitae urna orci.
-Quisque pellentesque dignissim felis, egestas tempus urna luctus vitae. In hac
-habitasse platea dictumst. Morbi fringilla mattis odio, et mattis tellus
-accumsan vitae.
+@kv é uma biblioteca de visão computacional com foco na Transformada Imagem-Floresta. A ideia surgiu como forma de ajudar a realizar os experimentos no laboratório e-science do Instituto de Matemática e Estatística (IME), na Universidade de São Paulo (USP).
 
-1. Amamus Unicode 碁
-2. Interdum nex magna.
+Um dos problemas encontrados pelo grupo é a falta de controle de versões das ferramentas que desenvolvemos. Algumas ferramentas criadas pelos professores Dr. Alexandre Falcão, da UNICAMP, e Dr. Paulo Miranda, da USP, são a BIA (Brain Analyzer) e CAOS (Computer Assisted Object Segmentation).
 
-Vivamus eget mauris sit amet nulla laoreet lobortis. Nulla in diam elementum
-risus convallis commodo. Cras vehicula varius dui vitae facilisis. Proin
-elementum libero eget leo aliquet quis euismod orci vestibulum. Duis rhoncus
-lorem consequat tellus vestibulum aliquam. Quisque orci orci, malesuada porta
-blandit et, interdum nec magna.
+Processos modernos de desenvolvimento de software, como Metodologias ágeis (SCRUM e Kanban), além de sistemas de controle de versões (CVS) como Git, podem proporcionar um trabalho acessível para todos, aumentando o impacto das nossas pesquisas.
+
+@kv é feito em C, usando uma recente especificação, a C11, focado em eficiência e simplicidade. 
