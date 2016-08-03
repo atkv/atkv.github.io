@@ -1,17 +1,17 @@
 #!/bin/sh
 
-# Temporarily store uncommited changes
-git stash
-
 # Verify correct branch
 git checkout develop
-
-git add -A
-git commit -m "Source"
 
 # Build new files
 stack exec atkv clean
 stack exec atkv build
+
+# Temporarily store uncommited changes
+git stash -u
+
+# Verify correct branch
+git checkout develop
 
 # Get previous files
 git fetch --all

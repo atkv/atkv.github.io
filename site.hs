@@ -11,6 +11,18 @@ main = hakyll $ do
         route   idRoute
         compile copyFileCompiler
 
+    match "doc/**" $ do
+        route   idRoute
+        compile copyFileCompiler
+
+    match "js/*" $ do
+        route   idRoute
+        compile copyFileCompiler
+
+    match "fonts/*" $ do
+        route   idRoute
+        compile copyFileCompiler
+
     match "css/*" $ do
         route   idRoute
         compile compressCssCompiler
@@ -34,7 +46,7 @@ main = hakyll $ do
             posts <- recentFirst =<< loadAll "posts/*"
             let archiveCtx =
                     listField "posts" postCtx (return posts) `mappend`
-                    constField "title" "Archives"            `mappend`
+                    constField "title" "Posts"               `mappend`
                     defaultContext
 
             makeItem ""
@@ -49,7 +61,7 @@ main = hakyll $ do
             posts <- recentFirst =<< loadAll "posts/*"
             let indexCtx =
                     listField "posts" postCtx (return posts) `mappend`
-                    constField "title" "Home"                `mappend`
+                    --constField "title" "Home"                `mappend`
                     defaultContext
 
             getResourceBody
