@@ -12,7 +12,8 @@ title: Equipe
   Instituto de Matemática e Estatística<br>
   Universidade de São Paulo<br>
   <span class="label label-success">acmt at ime.usp.br</span></p>
-  <p><a href="http://www.ime.usp.br/~acmt" class="btn btn-primary" role="button">Perfil</a> <a href="http://github.com/anderflash" class="btn btn-default" role="button"><i class="fa fa-github" aria-hidden="true"></i>
+  <p><a href="http://www.ime.usp.br/~acmt" class="btn btn-primary" role="button"><i class="fa fa-external-link" aria-hidden="true"></i>
+Perfil</a> <a href="http://github.com/anderflash" class="btn btn-default" role="button"><i class="fa fa-github" aria-hidden="true"></i>
 Github</a></p>
   </div>
   </div>
@@ -26,7 +27,8 @@ Github</a></p>
   Instituto de Matemática e Estatística<br>
   Universidade de São Paulo<br>
   <span class="label label-success">hans at ime.usp.br</span></p>
-  <p><a href="http://www.vision.ime.usp.br/~hans" class="btn btn-primary" role="button">Perfil</a></p>
+  <p><a href="http://www.vision.ime.usp.br/~hans" class="btn btn-primary" role="button"><i class="fa fa-external-link" aria-hidden="true"></i>
+Perfil</a></p>
   </div>
   </div>
   </div>
@@ -39,7 +41,8 @@ Github</a></p>
   Instituto de Matemática e Estatística<br>
   Universidade de São Paulo<br>
   <span class="label label-success">pmiranda at ime.usp.br</span></p>
-  <p><a href="http://www.vision.ime.usp.br/~pmiranda" class="btn btn-primary" role="button">Perfil</a></p>
+  <p><a href="http://www.vision.ime.usp.br/~pmiranda" class="btn btn-primary" role="button"><i class="fa fa-external-link" aria-hidden="true"></i>
+Perfil</a></p>
   </div>
   </div>
   </div>
