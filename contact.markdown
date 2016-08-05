@@ -21,7 +21,7 @@ Github</a></p>
   <div class="thumbnail">
   <img src="/images/hans.png" alt="...">
   <div class="caption">
-  <h3>Hans B. C. Bejar</h3>
+  <h3>Hans H. C. Bejar</h3>
   <p>Doutorando em Ciência da Computação<br>
   Instituto de Matemática e Estatística<br>
   Universidade de São Paulo<br>
