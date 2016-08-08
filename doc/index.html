@@ -40,7 +40,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">@kv
-   &#160;<span id="projectnumber">0.0.3</span>
+   &#160;<span id="projectnumber">0.0.4</span>
    </div>
    <div id="projectbrief">Library for graph problems in C and Python</div>
   </td>
@@ -56,6 +56,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li class="current"><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -110,12 +111,63 @@ $(document).ready(function(){initNavTree('index.html','');});
 <div class="title">@kv Documentation</div>  </div>
 </div><!--header-->
 <div class="contents">
-</div><!-- contents -->
+<div class="textblock"><p>Biblioteca de Visão Computacional com foco no framework IFT[1]</p>
+<table class="doxtable">
+<tr>
+<th>Branch </th><th>Building </th><th>Coverage  </th></tr>
+<tr>
+<td>Develop </td><td><div class="image">
+<img src="https://travis-ci.org/atkv/atkv2.svg?branch=develop"  alt="Build Status"/>
+</div>
+ </td><td><div class="image">
+<img src="https://coveralls.io/repos/github/atkv/atkv2/badge.svg?branch=develop"  alt="Coverage Status"/>
+</div>
+ </td></tr>
+<tr>
+<td>Master </td><td><div class="image">
+<img src="https://travis-ci.org/atkv/atkv2.svg?branch=master"  alt="Build Status"/>
+</div>
+ </td><td><div class="image">
+<img src="https://coveralls.io/repos/github/atkv/atkv2/badge.svg?branch=master"  alt="Coverage Status"/>
+</div>
+ </td></tr>
+</table>
+<h2>Como compilar</h2>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;$ git clone https://github.com/atkv/atkv2.git</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;$ cd atkv2</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;$ mkdir build &amp;&amp; cd build</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;$ cmake .. &amp;&amp; make</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;$ sudo make install</div></div><!-- fragment --><p>No Linux, ele instalará por padrão em <code>/usr/local/lib</code>, você pode alterar para <code>/usr/lib</code>(utilizando a flag <code>-DCMAKE_INSTALL_PREFIX</code>) ou <a href="http://stackoverflow.com/questions/17889799/libraries-in-usr-local-lib-not-found">incluir</a> <code>/usr/local/lib</code> no ldconfig.</p>
+<h2>Como usar</h2>
+<p>Basta criar o seu código (ex: <code>seu_programa.c</code> carrega e exibe um PNG) e compilá-lo: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;at/gui.h&gt;</span></div><div class="line"><span class="keywordtype">int</span> main(){</div><div class="line">  AtArrayU8* imagem = at_arrayu8_read_png(<span class="stringliteral">&quot;imagem.png&quot;</span>);</div><div class="line">  at_display_show_image(<span class="stringliteral">&quot;imagem&quot;</span>,imagem);</div><div class="line">  at_display_wait_key();</div><div class="line">  <span class="keywordflow">return</span> 0;</div><div class="line">}</div></div><!-- fragment --><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;$ gcc seu_programa.c -o seu_programa `pkg-config --libs --cflags atkv`</div></div><!-- fragment --><h2>API e Tutoriais</h2>
+<p>Você pode compilar a documentação utilizando a flag <code>-DBUILD_DOCS=ON</code> no processo de compilação, ou então acesse-o online <a href="http://atkv.github.io/docs">aqui</a>.</p>
+<h2>Módulos</h2>
+<p>@kv está separado em módulos (seu programa pode não precisar de todos os módulos):</p>
+<ul>
+<li><b>CORE</b> (contém praticamente o AtArray e outras estruturas básicas)</li>
+<li><b>IMGPROC</b> (contém o IFT, o carregamento de imagens JPG, PNG, DICOM e NIFTI)</li>
+<li><b>GUI</b> (contém código para interface gráfica)</li>
+</ul>
+<h2>Dependências</h2>
+<p>Para compilar tudo, só basta estes dois pacotes:</p>
+<ul>
+<li><a href="https://cmake.org/">CMake</a> 3.1+ (para compilar o código)</li>
+<li><a href="http://www.gtk.org/">GTK+</a> 3.18+ (para módulo <b>GUI</b>)</li>
+</ul>
+<p>Se não desejar compilar o módulo <b>GUI</b> (usando <code>-DBUILD_GUI=OFF</code>), então não é necessário o GTK+, basta ter:</p>
+<ul>
+<li><a href="http://www.libpng.org/pub/png/libpng.html">libpng</a> 1.6+ (para PNG, no módulo <b>IMGPROC</b>)</li>
+<li><a href="http://libjpeg.sourceforge.net/">libjpeg</a> 8.0+ (para JPEG, no módulo <b>IMGPROC</b>)</li>
+</ul>
+<p>Se também não desejar compilar o módulo <b>IMGPROC</b> (usando <code>-DBUILD_IMGPROC=OFF</code>), então você deseja apenas compilar o <b>CORE</b>, que precisa de:</p>
+<ul>
+<li><a href="http://www.zlib.net/">ZLib</a> 1.2+ (para os algoritmos de compressão)</li>
+</ul>
+<p>Os testes são feitos em <a href="https://cmocka.org/">CMocka</a> 1.0+.</p>
+<h2>Referências</h2>
+<p>[1] A. X. A. Falcão, J. Stolfi, R. de Alencar Lotufo, A. X. Falcao, J. Stolfi, and R. de Alencar Lotufo, “The Image Foresting Transform: Theory, Algorithms, and Applications,” IEEE Trans. Pattern Anal. Mach. Intell., vol. 26, no. 1, pp. 19–29, Jan. 2004. </p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Aug 5 2016 16:31:07 for @kv by
+    <li class="footer">Generated on Mon Aug 8 2016 17:05:01 for @kv by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>
   </ul>

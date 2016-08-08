@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['v',['v',['../structAtPQueueU64.html#aa27f8fee7776c2bc7cb76258d09284d4',1,'AtPQueueU64']]],
-  ['value',['value',['../structAtListU64.html#a11759f4a7cc962de68a912d3656eb202',1,'AtListU64']]],
-  ['vp',['vp',['../structAtPQueueU64.html#a3466a22e0db9044bf148bde2a9b7eb1e',1,'AtPQueueU64']]]
+  ['weights',['weights',['../structAtGraphArray.html#a9bbc7f681d0e0e0f60c8be669158cf03',1,'AtGraphArray']]],
+  ['withz',['withz',['../structAtZnzFile.html#a8fb2e16b425b96498034dc2ec96fbcfb',1,'AtZnzFile']]]
 ];

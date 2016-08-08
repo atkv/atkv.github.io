@@ -1,7 +1,5 @@
 var annotated_dup =
 [
-    [ "_AtImageViewerClass", "struct__AtImageViewerClass.html", "struct__AtImageViewerClass" ],
-    [ "_AtImageWindowClass", "struct__AtImageWindowClass.html", "struct__AtImageWindowClass" ],
     [ "AtArrayHeader", "structAtArrayHeader.html", "structAtArrayHeader" ],
     [ "AtConnectivity", "structAtConnectivity.html", "structAtConnectivity" ],
     [ "AtDicomBase", "structAtDicomBase.html", "structAtDicomBase" ],
@@ -9,6 +7,7 @@ var annotated_dup =
     [ "AtError", "structAtError.html", "structAtError" ],
     [ "AtGraphArray", "structAtGraphArray.html", "structAtGraphArray" ],
     [ "AtIFT", "structAtIFT.html", "structAtIFT" ],
+    [ "AtList", "structAtList.html", "structAtList" ],
     [ "AtListU64", "structAtListU64.html", "structAtListU64" ],
     [ "AtMouseEvent", "structAtMouseEvent.html", "structAtMouseEvent" ],
     [ "AtNifti1Extension", "structAtNifti1Extension.html", "structAtNifti1Extension" ],
@@ -18,9 +17,6 @@ var annotated_dup =
     [ "AtRange", "structAtRange.html", "structAtRange" ],
     [ "AtSCC", "structAtSCC.html", "structAtSCC" ],
     [ "AtSeeds", "structAtSeeds.html", "structAtSeeds" ],
-    [ "AtSliceViewerClass", "structAtSliceViewerClass.html", "structAtSliceViewerClass" ],
-    [ "AtSliceWindowClass", "structAtSliceWindowClass.html", "structAtSliceWindowClass" ],
-    [ "AtTrackbarClass", "structAtTrackbarClass.html", "structAtTrackbarClass" ],
     [ "AtWeighting", "structAtWeighting.html", "structAtWeighting" ],
     [ "AtZnzFile", "structAtZnzFile.html", "structAtZnzFile" ]
 ];

@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['iname',['iname',['../structAtNiftiImage.html#a8c04d9ce058d112dab1f875cf0ab7f0d',1,'AtNiftiImage']]],
-  ['iname_5foffset',['iname_offset',['../structAtNiftiImage.html#adc2a8f7c81e422c6e8a6d6bfd3c2c3d5',1,'AtNiftiImage']]],
-  ['intercept',['intercept',['../structAtDicomBase.html#a2938646d6e7d17c98559a4442ba03df0',1,'AtDicomBase']]]
+  ['l',['l',['../structAtIFT.html#abec4ab217be53c82b75ddadb6c86bcd3',1,'AtIFT']]],
+  ['last',['last',['../structAtQueueu64.html#a7c03e35a09f100afbda547f826edd0a5',1,'AtQueueu64']]],
+  ['luts',['luts',['../structAtDicomU16.html#ac910d99f03838028a87b4fd9f0f0a28b',1,'AtDicomU16']]],
+  ['lendo_20imagens_20médicas',['Lendo imagens médicas',['../md_medicas.html',1,'']]]
 ];

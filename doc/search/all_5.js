@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['ecode',['ecode',['../structAtNifti1Extension.html#af1f9ee7888f112cdef7fdce16e832beb',1,'AtNifti1Extension']]],
-  ['edata',['edata',['../structAtNifti1Extension.html#a4a7cce619fb99d54ae21c3cddf521162',1,'AtNifti1Extension']]],
-  ['elemsize',['elemsize',['../structAtArrayHeader.html#a79996d521e1dcbd2a3e6c6121814ed47',1,'AtArrayHeader']]],
-  ['esize',['esize',['../structAtNifti1Extension.html#a96b55978d90fb55be5e8e48a77767853',1,'AtNifti1Extension']]]
+  ['f',['f',['../structAtWeighting.html#afdc1ec01295ce49db7b2c4f916d41e9c',1,'AtWeighting']]],
+  ['filename',['filename',['../structAtDicomBase.html#ae88cfcd2f1492f7a982b97f6c9f473e0',1,'AtDicomBase']]],
+  ['first',['first',['../structAtQueueu64.html#a3a36cc0fe45ac869970502a7415a4aa4',1,'AtQueueu64']]],
+  ['fname',['fname',['../structAtNiftiImage.html#af7ab5741370523c630061067c3bd7cb6',1,'AtNiftiImage']]],
+  ['func',['func',['../structAtConnectivity.html#a11dba158c0502cf2c916e8c0c03791b9',1,'AtConnectivity']]]
 ];
