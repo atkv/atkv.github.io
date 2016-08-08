@@ -1,0 +1,20 @@
+----
+title: Versão 0.0.4
+----
+Olá pessoal, a versão 0.0.4 saiu do forno com novidades:
+
+- API para gerar gráficos e exibi-los na janela GTK
+- Line plot (só o Y)
+- Scatter plot (X e Y)
+- Bar plot (parecido com Line plot), mas com line
+- Pie plot (a pizza e a legenda)
+- Salvar para PNG, PDF e SVG
+
+<img src="/images/lineplot.svg" width="100%"/>
+<img src="/images/scatterplot.svg" width="100%"/>
+<img src="/images/barplot.svg" width="100%"/>
+<img src="/images/pieplot.svg" width="100%"/>
+
+Espero que vocês gostem. O processo de instalação está na descrição do repositório. Qualquer ideia ou problema, não hesite em nos contar na seção [_Issues_](https://github.com/atkv/atkv2/issues) do repositório.
+
+Abraços

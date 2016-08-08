@@ -101,6 +101,7 @@ h1{
   right: 0px;
   left: 0px;
   z-index: auto;
+  color:black;
 }
 @media(min-width:768px){
   body > .container{
